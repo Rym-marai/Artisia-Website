@@ -1,0 +1,589 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Paragraph Styling */
+p {
+    font-weight: 300;
+    color: #111;
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1; 
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center;
+    background-color: #fff; 
+}
+
+/* Logo Styling */
+.logo {
+    color: #000;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #4793AF;
+}
+
+/* Navigation Styling */
+.navbar {
+    display: flex;
+    }
+
+.navbar li {
+    list-style: none; 
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: none; 
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+/* Reserve Button Styling */
+.btn-reserve {
+    padding: 10px 20px;
+    background: #4793AF;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.btn-reserve:hover {
+    background: #333;
+    transition: ease-out;
+}
+
+/* Styling for Navbar Links on Hover */
+header .navbar li a:hover {
+    color: #4793AF;
+    border-bottom: 2px solid #4793AF;
+}
+
+/* Banniere Section Styling */
+.banniere {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/fn.png);
+    background-size: cover;
+}
+
+.banniere .contenu {
+    margin-top: 200px;
+    max-width: 70%;
+    text-align: center;
+}
+
+.banniere .contenu h2 {
+    color: #3C5B6F;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+.contenu p:nth-child(2) {
+    color: #3C5B6F;
+    font-size: 1.2em;
+}
+
+/* Section Styling */
+section {
+    padding: 100px;
+}
+
+/* Row Styling */
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Column 50% Styling */
+.row .col50 {
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .col50 h2 {
+    margin-bottom: 20px;
+}
+
+/* Titre Texte Styling */
+.titre-texte {
+    color: #000;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+
+.titre-texte span {
+    color: #4793AF;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+/* Column 50% Image Styling */
+.row .col50 img {
+    height: 450px;
+    width: 600px;
+    position: relative;
+}
+
+/* Titre Styling */
+.titre {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Menu Styling */
+.menu {
+    margin-top: -150px;
+}
+
+.menu .contenu {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.menu .contenu .box {
+    width: 190px;
+    margin: 10px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+.menu .contenu .box .imbox {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.menu .contenu .box .imbox img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+}
+
+.menu .contenu .box .text {
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+
+.menu .contenu .box .text h4 {
+    font-weight: 400;
+}
+/* Schedule Styling */
+.schedule {
+    margin-top: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    width: 120px;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Heading 4 Styling */
+h4 {
+    color: #333;
+}
+
+/* Program Styling */
+.prog {
+    background-image: url(./images/fondd.png);
+    background-size: cover;
+}
+
+/* Event Styling */
+.event {
+    background-image: url(./images/fondd.png);
+    background-size: cover;
+}
+
+.event .contenu {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.event .contenu .box {
+    width: 340px;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.event .contenu .box .imbox {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.event .contenu .box .imbox img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.event .contenu .box .text {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+.event .contenu .box .text h4 {
+    color: #4793AF;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+/* Styling for Text and Elements on Light Background */
+.blanc .titre-texte {
+    color: #fff;
+}
+
+.blanc .titre-texte,
+.blanc p {
+    color: #fff;
+}
+
+
+.btnev{
+    padding: 20px 30px;
+    border-radius: 4px;
+    background: white;
+    margin-top: -10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.btnev:hover{
+     background: #333;
+     transition: ease-out;
+}
+
+/* Footer Styling */
+footer {
+    background-color: white;
+    background-size: cover;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form,
+.map,
+.contact-info {
+    flex: 1;
+    margin-left: 60px;
+}
+
+.contact-form h3,
+.map h3,
+.contact-info h3 {
+    margin-top: 0;
+    color: #4793AF;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 80%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contact-form button {
+    font-size: 1em;
+    font-weight: 700;
+    color: #ffff;
+    background: #4793AF;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+}
+
+.map iframe {
+    width: 90%;
+    height: 200px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Social Media Icons Styling */
+.social-media-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #4793AF;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #333;
+}
+
+/* Copyright Styling */
+.copyright {
+    padding: 20px 40px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    background: rgba(228, 222, 222,);
+    text-align: center;
+}
+
+.copyright p {
+    color: #333;
+}
+
+/* Sticky Header Styling */
+header.sticky {
+    background: #fff;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header.sticky .logo {
+    color: #000;
+}
+
+header.sticky .navbar li a {
+    color: #000;
+}
+
+header.sticky li a:hover {
+    color: #4793AF;
+    border-bottom: 2px solid #4793AF;
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    width: 250px;
+    background-color: #4793AF;
+    color: white;
+    border-radius: 10px;
+}
+
+.fa {
+    font-size: 1000px;
+}
+
+/* Popup Styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index:1;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Hover Effect for Images */
+.imbox:hover {
+    box-shadow: 0px 0px 10px 5px #4793AF;
+    transform: scale(1.07); 
+}
+
+
+
+
+    /* popfr Styling */
+    .popfr {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index:1;
+    }
+
+    .popfr-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+    
+    /* Form Styling */
+    .conteneurp {
+        margin-top: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .checkboxes {
+        margin-bottom: 15px;
+    }
+
+    .checkboxes label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .checkboxes input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+   input[type="submit"], input[type="reset"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 48%;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+        background-color: #45a049;
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: space-between;
+    }

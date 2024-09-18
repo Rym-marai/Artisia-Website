@@ -1,0 +1,371 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Artisia</title>
+<body>
+<header>
+     <!-- Logo and navigation menu -->
+    <a href="#" class="logo"><span>A</span>rtisia</a>
+    
+    <ul class="navbar">
+        <!-- Navigation links -->
+        <li><a href="#banniere" >Accueil</a></li>
+        <li><a href="#apropos" >A propos</a></li>
+        <li><a href="#branche" >Branches</a></li>
+        <li><a href="#prog" >  Programme</a></li>
+        <li><a href="#event" >Événement</a></li>
+        <li><a href="#contact" >Contact</a></li>
+        <!-- Pre-inscription button -->
+        <a href="inscrit.php" class="btn-reserve" style="color:white;">Pré-Inscription</a>
+    </ul>
+
+</header>
+<!-- Banniere section -->
+<section class="banniere" id="banniere">
+    <div class="contenu">
+        <h2>Laissez Parler votre Créativité </h2>
+        <p>Plongez dans un monde où l'art est roi, où chaque coin recèle de merveilles artistiques à découvrir. Rejoignez notre communauté passionnée et explorez les infinies possibilités de l'expression artistique</p>
+        
+    </div>
+</section>
+<!-- A propos section -->
+<section class="apropos" id="apropos">
+    <div class="row">
+        <div class="col50">
+            <h2 class="titre-texte"><span>A</span> Propos De Nous</h2>
+            <p>Bienvenue à ARTISIA, notre club d'art dédié à l'expression créative et à l'inspiration artistique ! Réunissant des artistes de tous horizons, nous sommes une communauté passionnée partageant un amour commun pour l'art sous toutes ses formes. Des ateliers stimulants aux expositions captivantes, nous offrons un espace inclusif où chacun peut s'épanouir et partager sa passion pour l'art. <br> <br>Rejoignez-nous et explorez votre créativité au sein de notre communauté artistique dynamique. De plus, notre groupe de jeunes artistes propose des ateliers, des cours et un espace motivant pour tous, favorisant ainsi le développement artistique et l'inspiration continue.
+            </p>
+        </div>
+        <div class="col50">
+            <div class="img">
+                <img src="./images/abt.jpg" alt="image">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Branches section -->
+<section class="menu" id="branche">
+    <div class="titre">
+        <h2 class="titre-texte">Branches <span>C</span>réatives</h2>
+        <p>Où la Créativité Prend de Nombreuses Formes</p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox" onclick="openPopup('popup1')" >
+                <img src="./images/pin.jpg" alt="" >
+            </div>
+            <div class="text">
+                <h4>Peinture</h4>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox" onclick="openPopup('popup2')">
+                <img src="./images/dss.jpg" alt="">
+            </div>
+            <div class="text">
+                <h4>Dessin</h4>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox" onclick="openPopup('popup3')">
+                <img src="./images/sc.jpg" alt="">
+            </div>
+            <div class="text">
+                <h4>Sclupture</h4>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox" onclick="openPopup('popup4')">
+                <img src="./images/grv.jpg" alt="">
+            </div>
+            <div class="text">
+                <h4>Gravure</h4>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox" onclick="openPopup('popup5')">
+                <img src="./images/cro.jpg" alt="">
+            </div>
+            <div class="text">
+                <h4>Art Textile</h4>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/diy.jpg" alt="" onclick="openPopup('popup6')">
+            </div>
+            <div class="text">
+                <h4>Bricolage</h4>
+            </div>
+        </div>
+    </div>
+ </div>
+    <div class="popup" id="popup1">
+        <div class="popup-content">
+            <h2>Peinture</h2>
+            <p>Notre club organise des séances de peinture où les membres peuvent explorer différentes techniques et styles artistiques. Des ateliers dirigés par des artistes expérimentés sont régulièrement organisés pour aider les membres à développer leurs compétences et à trouver leur propre style. De plus, nous organisons des expositions pour mettre en valeur les œuvres des membres et favoriser l'inspiration et la collaboration.</p>
+            <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+        </div>
+    </div>
+    <div class="popup" id="popup2">
+        <div class="popup-content">
+            <h2>Dessin</h2>
+            <p>Dans notre club, le dessin est une activité centrale où les membres peuvent s'exprimer librement à travers des croquis, des esquisses et des compositions plus élaborées. Nous proposons des séances de dessin de modèle vivant, des cours de dessin de paysages et d'objets, ainsi que des critiques de groupe pour encourager le développement artistique. Les membres peuvent également partager leurs techniques et leurs idées lors de sessions de dessin en plein air et d'événements spéciaux.</p>
+            <span class="close-btn" onclick="closePopup('popup2')">&times;</span>
+        </div>
+    </div>
+    <div class="popup" id="popup3">
+        <div class="popup-content">
+            <h2>Sculpture</h2>
+            <p>Pour les amateurs de sculpture, notre club offre des occasions uniques d'explorer différentes méthodes de création en trois dimensions. Des ateliers de sculpture sur argile, de taille de pierre, de modelage de métal et d'autres matériaux sont organisés pour permettre aux membres de développer leurs compétences et leur créativité. Nous encourageons également les collaborations sculpturales et organisons des expositions pour mettre en valeur les réalisations des membres.</p>
+            <span class="close-btn" onclick="closePopup('popup3')">&times;</span>
+        </div>
+    </div>
+    <div class="popup" id="popup4">
+        <div class="popup-content">
+            <h2>Gravure</h2>
+            <p>La gravure est une forme d'art traditionnelle qui trouve sa place dans notre club à travers des ateliers spécialisés et des démonstrations pratiques. Les membres ont la possibilité d'explorer différentes techniques de gravure, telles que la gravure sur bois, la gravure sur métal et la gravure en creux, sous la direction d'artistes experts. Des projets de gravure individuels et collectifs sont encouragés, et les membres peuvent exposer leurs œuvres lors d'événements dédiés à la gravure.</p>
+            <span class="close-btn" onclick="closePopup('popup4')">&times;</span>
+        </div>
+    </div>
+
+    <div class="popup" id="popup5">
+        <div class="popup-content">
+            <h2>Art Textile</h2>
+            <p> Notre club propose un espace dynamique pour les amateurs d'art textile afin d'explorer les techniques de tissage, de broderie, de teinture et de création de motifs. Des ateliers spécialisés sont organisés pour permettre aux membres d'apprendre de nouvelles compétences et de créer des pièces uniques, telles que des tapisseries, des quilts et des vêtements textiles. Nous encourageons également l'échange d'idées et la collaboration entre les membres pour stimuler l'innovation dans le domaine de l'art textile.</p>
+            <span class="close-btn" onclick="closePopup('popup5')">&times;</span>
+        </div>
+    </div>
+    <div class="popup" id="popup6">
+        <div class="popup-content">
+            <h2>Bricolage</h2>
+            <p>Pour les passionnés de bricolage et d'artisanat, notre club offre un environnement créatif où les membres peuvent expérimenter avec une variété de matériaux et de techniques. Des ateliers de fabrication d'objets décoratifs, de réutilisation de matériaux recyclés et de création de projets DIY sont régulièrement organisés pour inspirer et divertir les membres. Nous encourageons également le partage de compétences et l'échange d'idées pour favoriser une culture de l'artisanat et de la créativité au sein du club.</p>
+            <span class="close-btn" onclick="closePopup('popup6')">&times;</span>
+        </div>
+    </div>
+    <!-- Programme section -->
+</section>
+<section class="prog" id="prog">
+    <div class="titre">
+        <h2 class="titre-texte" style="color: white;">Programme</h2>
+        <p style="color: white;">Planifiez votre semaine artistique avec notre agenda</p>
+    </div>
+    <div class="schedule">
+  <!-- Weekly schedule table -->
+  <center><table>
+    <tr>
+      <th>Heure</th>
+      <th>Lundi</th>
+      <th>Mardi</th>
+      <th>Mercredi</th>
+      <th>Jeudi</th>
+      <th>Vendredi</th>
+      <th>Samedi</th>
+      <th>Dimanche</th>
+    </tr>
+    <tr>
+      <td>10h - 12h</td>
+      <td>Peinture </td>
+      <td>Dessin</td>
+      <td>Gravure</td>
+      <td>Sculpture</td>
+      <td>Gravure</td>
+      <td>Art textile</td>
+      <td>Peinture</td>
+    </tr>
+    <tr>
+      <td>12h - 14h</td>
+      <td>Dessin</td>
+      <td>Gravure</td>
+      <td>Peinture</td>
+      <td>Dessin</td>
+      <td>DIY</td>
+      <td>Peinture</td>
+      <td>Sculpture</td>
+    </tr>
+    <tr>
+      <td>14h - 16h</td>
+      <td>Sculpture</td>
+      <td>Peinture</td>
+      <td>Art Textile</td>
+      <td>Peinture</td>
+      <td>Sculpture</td>
+      <td>Gravure</td>
+      <td>Gravure</td>
+    </tr>
+    <tr>
+      <td>16h - 18h</td>
+      <td>Dessin</td>
+      <td>DIY</td>
+      <td>Dessin</td>
+      <td>Art Textile</td>
+      <td>Dessin</td>
+      <td>Dessin</td>
+      <td>Peinture</td>
+    </tr>
+    <tr>
+      <td>18h - 20h</td>
+      <td>Gravure</td>
+      <td>Art Textile</td>
+      <td>Sculpture</td>
+      <td>DIY</td>
+      <td>Peinture</td>
+      <td>Art Textile</td>
+      <td>DIY</td>
+    </tr>
+  </table></center>
+</div>
+</section>
+
+<!-- Statistics section -->
+<section>       
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <span><i class="fa fa-users"></i></span>
+      <h3>500+</h3>
+      <p>Membres </p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <span><i class="fa fa-picture-o "></i></span>
+      <h3>60+</h3>
+      <p>Expositions Internationales </p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <span><i class="fa fa-picture-o "></i></span>
+      <h3>20+</h3>
+      <p>Expositions Nationales </p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <span><i class="fa fa-cubes"></i></span>
+      <h3>100+</h3>
+      <p>Ateliers Organisés</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Prochains Événements section -->
+ <section class="event" id="event">
+    <div class="titre blanc">
+        <h2 class="titre-texte"  style="color: white;">Prochains Événements</h2>
+        <p  style="color: white;">Découvrez ce que l'Avenir vous Réserve avec Nos Événements à Venir</p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/kids.jpg" alt="">
+            </div>
+            <h4>Éclats de Couleurs</h4><br>
+            <div class="text">      
+                <p>Offrez à votre enfant l'opportunité d'explorer son imagination et de laisser libre cours à sa créativité lors de notre atelier de peinture pour enfants. Encadrés par nos artistes expérimentés. </p>
+                <h4>15 Mars 2024</h4>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/evnt2.jpg" alt="">
+            </div>
+            <h4>Palette en Plein Air</h4><br>
+            <div class="text">
+                <p> Plongez dans un océan de couleurs avec notre exposition collective "Éclats de Couleurs". Découvrez les œuvres vibrantes de nos artistes membres et laissez-vous transporter par leur créativité débordante.</p>
+                <h4>23 Mars 2024</h4>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/event3.jpg" alt="">
+            </div>
+            <h4>Fil en Folie</h4><br>
+            <div class="text">
+                <p> Plongez dans l'art du crochet lors de notre atelier dédié. Que vous soyez débutant ou expérimenté, venez découvrir les bases du crochet ou perfectionner vos techniques existantes.</p>
+                <h4>20 Avril 2024</h4>
+            </div>
+        </div>
+
+    </div><br>
+   <center> <a href="event.php" class="btnev" style="color:#4793AF; font-weight: bold;">Pré-Enregistrement</a></center>
+ </section>
+
+      <!-- Contact section -->
+      <footer class="contact" id="contact">
+        <!-- Contact form -->
+        <div class="contact-form">
+            <h3>Contactez-nous</h3><br>
+            <form  action="insertmessage.php" method="POST">
+                <input type="text" name="name" id="name" placeholder="Votre Nom">
+                <input type="email" name="email" id="email" placeholder="Votre Email">
+                <textarea name="message" id="message" placeholder="Votre Message .."></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+         <!-- Google Maps iframe -->
+        <div class="map">
+            <h3>Notre Localisation</h3><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15657.45790776855!2d10.17647656278018!3d36.80079238163509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd346c1ae482a9%3A0x78827fe9ed6046cc!2sAvenue%20Habib%20Bourguiba%20Clocktower!5e0!3m2!1sen!2sca!4v1709304047285!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Contact information -->
+        <div class="contact-info">
+            <h3>Contact Information</h3><br>
+            <p>Email: contact@artisiaclub.com</p>
+            <p>Tel: +216 99 888 777</p>
+            <p>Adresse: 13 Avenue Habib Bourguiba , Tunis</p>
+            <div class="social-media-icons">
+            <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fa fa-behance"></i></a>
+            <a href="#" class="social-icon"><i class="fa fa-pinterest"></i></a>
+           </div>
+
+        </div>
+    </footer>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>Rym Marai &nbsp;  2éme Big Data '2' <br> Institut Supérieur des Arts Multimédia de la Manouba</p>
+    </div>
+
+
+<!-- JavaScript -->
+ <script type="text/javascript">
+
+    window.addEventListener('scroll', function(){
+    const header = document.querySelector('header');
+    header.classList.toggle("sticky", window.scrollY > 0 );
+    });
+
+
+     // Popup functions
+     function openPopup(popupId) {
+        var popup = document.getElementById(popupId);
+        popup.style.display = "block";
+    }
+    function closePopup(popupId) {
+        var popup = document.getElementById(popupId);
+        popup.style.display = "none";
+    }
+
+ </script>
+</body>
+</html>
+
